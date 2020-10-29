@@ -67,10 +67,10 @@
                 </div>
               </div>
             </form>
-            <button class="button is-block is-danger is-fullwidth">
-              Registrar
-            </button>
           </div>
+          <button class="button is-block is-danger is-fullwidth">
+            Registrar
+          </button>
         </div>
       </div>
     </div>
