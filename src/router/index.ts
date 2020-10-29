@@ -4,7 +4,7 @@ import Login from '../views/Login.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
-    path: '/',
+    path: '/Home',
     name: 'Home',
     component: Home
   },
@@ -17,7 +17,7 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
   {
-      path: '/login',
+      path: '/',
       name: 'login',
       component: Login
   }
