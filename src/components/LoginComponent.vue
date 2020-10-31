@@ -53,8 +53,8 @@
             </button>
           </div>
           <p class="has-text-grey">
-            <a class = "has-text-white" href="">Fazer cadastro</a> &nbsp;·&nbsp;
-            <a class = "has-text-white" href="">Esqueci minha senha</a> &nbsp;·&nbsp;
+            <a class = "has-text-white" @click="$router.replace({ path: '/cadastro' })">Fazer cadastro</a> &nbsp;·&nbsp;
+            <a class = "has-text-white" @click="$router.replace({ path: '/esquecisenha' })">Esqueci minha senha</a> &nbsp;·&nbsp;
             <a class = "has-text-white" href="">Precisa de ajuda?</a>
           </p>
         </div>
