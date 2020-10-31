@@ -3,6 +3,7 @@ import Home from '../views/Home.vue'
 import Login from '../views/Login.vue'
 import Cadastro from '../views/Cadastro.vue'
 import EsqueciSenha from '../views/EsqueciSenha.vue'
+import Main from '../views/Main/Main.vue'
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/Home',
@@ -31,6 +32,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/esquecisenha',
     name: 'esquecisenha',
     component: EsqueciSenha
+  },
+  {
+    path: '/main',
+    name: 'main',
+    component: Main
   }
 ]
 

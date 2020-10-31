@@ -48,7 +48,7 @@
               <input type="checkbox" />
               Lembrar login
             </label>
-            <button class="button is-block is-danger is-fullwidth">
+            <button class="button is-block is-danger is-fullwidth" @click="$router.replace({ path: '/main' })">
               Login
             </button>
           </div>
