@@ -2,6 +2,9 @@
 
 # todo-list
 
+## grupo
+Edmara Cavalcante
+
 ## Project setup
 ```
 npm install
