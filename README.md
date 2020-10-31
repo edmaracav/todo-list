@@ -1,3 +1,5 @@
+![CI](https://github.com/edmaracav/todo-list/workflows/CI/badge.svg)
+
 # todo-list
 
 ## Project setup
