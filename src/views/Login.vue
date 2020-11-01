@@ -14,7 +14,7 @@
               <div class="field">
                 <div class="control">
                   <p class="control has-icons-left has-icons-right">
-                    <input class="input" type="email" placeholder="Email" />
+                    <input class="input" type="email" placeholder="Email" v-model="form.email"/>
                     <span class="icon is-small is-left">
                       <i class="fas fa-envelope"></i>
                     </span>
@@ -31,6 +31,7 @@
                       class="input"
                       type="password"
                       placeholder="Password"
+                      v-model="form.password"
                     />
                     <span class="icon is-small is-left">
                       <i class="fas fa-lock"></i>
@@ -61,9 +62,17 @@
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
 
-export default class Login extends Vue {}
+export default class Login extends Vue {
+
+ private form = {
+        email: "",
+        password: "",
+    };
+
+}
 
 </script>
+
 
 <style scoped>
 

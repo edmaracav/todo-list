@@ -11,7 +11,7 @@
               <div class="field">
                 <div class="control">
                   <p class="control has-icons-left has-icons-right">
-                    <input class="input" type="email" placeholder="Email" />
+                    <input class="input" type="email" placeholder="Email" v-model="form.email"/>
                     <span class="icon is-small is-left">
                       <i class="fas fa-envelope"></i>
                     </span>
@@ -36,6 +36,10 @@
 import { Options, Vue } from 'vue-class-component';
 
 
-export default class EsqueciSenha extends Vue {}
+export default class EsqueciSenha extends Vue {
+     private form = {
+        email: ""
+    };
+}
 
 </script>

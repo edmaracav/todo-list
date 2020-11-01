@@ -11,7 +11,7 @@
               <div class="field">
                 <div class="control">
                   <p class="control has-icons-left has-icons-right">
-                    <input class="input" type="email" placeholder="Email" />
+                    <input class="input" type="email" placeholder="Email" v-model="form.email"/>
                     <span class="icon is-small is-left">
                       <i class="fas fa-envelope"></i>
                     </span>
@@ -27,6 +27,7 @@
                     <input
                       class="input"
                       type="email"
+                      v-model="form.confirmEmail"
                       placeholder="Confirmar email"
                     />
                     <span class="icon is-small is-left">
@@ -45,6 +46,7 @@
                       class="input"
                       type="password"
                       placeholder="Password"
+                      v-model="form.password"
                     />
                     <span class="icon is-small is-left">
                       <i class="fas fa-lock"></i>
@@ -58,6 +60,7 @@
                     <input
                       class="input"
                       type="password"
+                      v-model="form.confirmPassword"
                       placeholder="Confirme sua senha"
                     />
                     <span class="icon is-small is-left">
@@ -80,6 +83,13 @@
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
 
-export default class Cadastro extends Vue {}
+export default class Cadastro extends Vue {
+   private form = {
+        email: "",
+        confirmEmail: "",
+        password: "",
+        confirmPassword: ""
+    };
+}
 
 </script>
